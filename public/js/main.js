@@ -48,7 +48,7 @@
                 }
 
                 var table = s => `
-                <p>Chi Tiết Tính Năng Sản Phẩm</p>
+                <h5>Chi Tiết Tính Năng Sản Phẩm</h5>
                 <div class="container pt-5">
                     <table class="table  table-sm">
                         <thead class="table-info">
@@ -122,7 +122,7 @@
                 }
 
                 var two = `
-                <p>Các Phương Thức Tùy Chọn</p>
+                <h5>Các Phương Thức Tùy Chọn</h5>
                 <div class="container pt-5">
                 <table class="table  table-sm">
                     <thead class="table-info">

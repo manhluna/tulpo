@@ -242,9 +242,15 @@ body {
   line-height: 1.6;
   color: #222;
   font-weight: 400;
-  font-family: 'Poppins';
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
-  background: #222; 
+  background: #06305d;
+}
+
+div#end {
+    padding: 20px;
+    line-height: 25px;
+    border: solid 1px grey;
 }
 
 .main {
@@ -254,10 +260,15 @@ body {
   width: 1200px;
   position: relative;
   margin: 0 auto;
-  background: #efeeff; }
+  background: #dee2e6;
+  }
 
 .wiz p {
   margin: 0px; }
+
+#end p {
+    font-weight: bold;
+}
 
 .wiz p.desc {
   padding-bottom: 330px;
@@ -296,7 +307,7 @@ body {
   border: none;
   border-bottom: 1px solid #bfbfbf;
   box-sizing: border-box;
-  font-family: 'Poppins';
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   font-size: 24px;
   transition: 0.3s ease;
@@ -416,11 +427,6 @@ body {
 .wiz .steps {
   display: none; }
 
-/* html {
-    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    font-size: 14px;
-} */
-
 .table {
     border: none;
 }
@@ -509,7 +515,17 @@ body {
     -ms-flex-direction: column; }
 
     .wiz .steps ul li, .wiz .signup-desc, .wiz .signup-form-conent {
-    width: 100%; } }
+    width: 100%; 
+    }
+
+.signup-desc {
+    display: none;
+} 
+.wiz .content {
+    position: relative;
+    padding: 100px 0 100px 0;
+}
+}
 @media screen and (max-width: 480px) {
     .wiz .actions ul li a {
     width: 100px; } }
