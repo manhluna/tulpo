@@ -366,6 +366,16 @@ div#end {
 .wiz .form-group {
   position: relative; }
 
+div#bang-bs {
+    padding: 10px;
+    background: #8080804d;
+}
+
+div#bang-tn {
+    background: #8080802b;
+    padding: 10px;
+}
+
 .wiz .field-icon {
   font-size: 24px;
   position: relative;
@@ -439,6 +449,10 @@ div#end {
 
 .table td {
     vertical-align: middle;
+}
+
+.bang-bs table tr {
+    border-bottom: solid 1px;
 }
 
 .page-item > * {
