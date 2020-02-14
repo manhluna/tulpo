@@ -70,7 +70,7 @@
                     tong=tong + Number(p.g.split(',').join(''))
                     t= t + `<tr> <td>${p.tn}</td> <td>${p.g}</td> </tr>`
                 })
-                t= t+ `<tr> <td>TỔNG</td> <td>${cover(tong)}</td> </tr>`
+                t= t+ `<tr> <td style="color:red;"><strong>TỔNG</strong></td> <td style="color:red;">${cover(tong)}</td> </tr>`
                 $('#bang-tn').html(table(t))
 
                 const users = s => {
@@ -159,9 +159,9 @@
                     </tr>
 
                     <tr>
-                    <td>TỔNG</td>
+                    <td style="color:red;"><strong>TỔNG</strong></td>
                     <td></td>
-                    <td>${printPer}</td>
+                    <td style="color:red;">${printPer}</td>
                     </tr>
                     </tbody>
                 </table>
@@ -206,7 +206,7 @@
                 <p>Thời Gian Tối Đa Dự Kiến: ${timemax($('#field').val(), sp)}</P>
                 <p>Frontend: Boostrap, React</P>
                 <p>Backend: Nodejs, Go</P>
-                <p>cảm ơn ...................................</P>
+                <p>Cảm ơn  khách</P>
                 `
                 $('#end').html(final)
             }

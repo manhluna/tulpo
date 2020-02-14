@@ -229,13 +229,19 @@ list-type-ulli, .wiz .actions ul {
 
 .wiz h2 {
   font-size: 27px;
-  color: #222;
+  color: #f8f9fa;
   font-weight: 800;
   font-family: 'Muli';
   margin: 0px;
-  padding-bottom: 65px; }
+  padding-bottom: 65px;
+  }
+
+h2.b3 {
+    color: #193fba;
+}
 .wiz h2 span {
-    color: #7c7cdd; }
+    color: white;
+    }
 
 body {
   font-size: 13px;
@@ -244,13 +250,30 @@ body {
   font-weight: 400;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
-  background: #06305d;
+  background: #0F0C8E;
+}
+
+h5 {
+    color: #193fba;
+}
+
+th {
+    color: #193FBA;
+    font-size: 16px;
 }
 
 div#end {
     padding: 20px;
     line-height: 25px;
-    border: solid 1px grey;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
+    background: #e9ecef;
+}
+
+div#end p {
+    font-size: 14px;
+    color: #193fba;
 }
 
 .main {
@@ -260,7 +283,7 @@ div#end {
   width: 1200px;
   position: relative;
   margin: 0 auto;
-  background: #dee2e6;
+  background: white;
   }
 
 .wiz p {
@@ -271,13 +294,18 @@ div#end {
 }
 
 .wiz p.desc {
-  padding-bottom: 330px;
-  color: #999;
-  line-height: 1.92; }
+  padding-bottom: 150px;
+  color: #e8e4e4;
+  line-height: 1.92;
+  font-size: 16px;
+  }
 
 .wiz p.title {
   font-weight: bold;
-  padding-bottom: 7px; }
+  padding-bottom: 7px;
+  color: white;
+  font-size: 20px;
+  }
 
 .wiz .signup-img {
   padding-bottom: 43px; }
@@ -289,8 +317,9 @@ div#end {
 }
 
 .wiz .signup-desc {
-  background: #fff;
-  width: 495px; }
+  background: #193FBA;
+  width: 495px;
+  }
 
 .wiz .signup-desc-content {
   padding: 45px 55px; }
@@ -318,7 +347,9 @@ div#end {
   padding-top: 30px;
   padding-bottom: 5px;
   -webkit-appearance: none;
-  background: transparent; }
+  background: transparent;
+  color: #193FBA;
+  }
 .wiz input + label {
     position: absolute;
     transition: 0.25s ease;
@@ -330,7 +361,8 @@ div#end {
     top: 25px;
     font-size: 24px;
     font-weight: bold;
-    color: #888; }
+    color: #193fba;
+    }
 
 .wiz select + label {
       position: absolute;
@@ -360,20 +392,26 @@ div#end {
       font-weight: 500; }
 .wiz select:valid + label {
       top: -7px;
-      font-size: 14px;
-      font-weight: 500; }
+      font-size: 16px;
+      font-weight: 500;
+      color: #193FBA;
+      }
 
 .wiz .form-group {
   position: relative; }
 
 div#bang-bs {
     padding: 10px;
-    background: #8080804d;
+    background: #e9ecef;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
 }
 
 div#bang-tn {
-    background: #8080802b;
+    background: #e9ecef;
     padding: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
 }
 
 .wiz .field-icon {
@@ -412,8 +450,9 @@ div#bang-tn {
 .wiz .actions ul li {
     margin-left: 20px; }
 .wiz .actions ul li:first-child a {
-      background: #fff;
-      color: #999; }
+      background: #193FBA;
+      color: white;
+      }
 .wiz .actions ul li a {
       width: 140px;
       height: 50px;
@@ -421,7 +460,7 @@ div#bang-tn {
       font-family: 'Montserrat';
       font-size: 13px;
       font-weight: bold;
-      background: #7c7cdd;
+      background: #193FBA;
       align-items: center;
       -moz-align-items: center;
       -webkit-align-items: center;
@@ -432,7 +471,8 @@ div#bang-tn {
       -webkit-justify-content: center;
       -o-justify-content: center;
       -ms-justify-content: center;
-      text-decoration: none; }
+      text-decoration: none;
+      }
 
 .wiz .steps {
   display: none; }
@@ -449,6 +489,7 @@ div#bang-tn {
 
 .table td {
     vertical-align: middle;
+    color: #193FBA;
 }
 
 .bang-bs table tr {
@@ -471,14 +512,14 @@ div#bang-tn {
     position: relative;
     width: 30px;
     height: 10px;
-    background-color: #818181;
+    background-color: #0062cc;
     border-radius: 15px;
     margin-right: 10px;
     -webkit-transition: background .3s ease;
     transition: background .3s ease;
     vertical-align: middle;
     margin: 0 16px;
-    box-shadow: none; 
+    box-shadow: none;
   }
     .custom-checkbox .custom-control-indicator:after {
       content: "";
@@ -495,13 +536,13 @@ div#bang-tn {
       transition: left .3s ease, background .3s ease, box-shadow .1s ease; 
     }
   .custom-checkbox .custom-control-input:checked ~ .custom-control-indicator {
-    background-color: hsl(240, 59%, 68%);
+    background-color: #193fba;
     background-image: none;
-    box-shadow: none !important; 
+    box-shadow: none !important;
   }
     .custom-checkbox .custom-control-input:checked ~ .custom-control-indicator:after {
-      background-color: hsl(240, 59%, 68%);
-      left: 15px; 
+      background-color: #193fba;
+      left: 15px;
     }
   .custom-checkbox .custom-control-input:focus ~ .custom-control-indicator {
     box-shadow: none !important; 
