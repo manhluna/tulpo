@@ -20,7 +20,12 @@
                 pt: $('#bang-bs').html(),
                 info: $('#end').html()
             },function(ketqua) {
-                alert(ketqua)
+                $.notify("Gửi Báo Giá Thành Công\nXin Cám Ơn Quý Khách", {
+                    className: "success",
+                    arrowSize: 10,
+                    globalPosition: 'bottom right',
+                    gap: 10
+                });
             });
         },
         onStepChanged: function(event, currentIndex) {
@@ -206,7 +211,6 @@
                 <p>Thời Gian Tối Đa Dự Kiến: ${timemax($('#field').val(), sp)}</P>
                 <p>Frontend: Boostrap, React</P>
                 <p>Backend: Nodejs, Go</P>
-                <p>Cảm ơn  khách</P>
                 `
                 $('#end').html(final)
             }
