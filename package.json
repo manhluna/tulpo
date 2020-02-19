@@ -14,7 +14,6 @@
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "http": "0.0.0",
-    "mongoose": "^5.8.11",
-    "nodemailer": "^6.4.2"
+    "telegraf": "^3.36.0"
   }
 }
